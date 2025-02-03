@@ -1,0 +1,216 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #34495e; /* Darker gray text for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.8rem;
+    color: #2c3e50; /* Darker shade for header */
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Category Dropdown */
+label {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    color: #2980b9; /* Bright blue color for the label */
+}
+
+#category-select {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    width: 250px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+#category-select:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Challenge Section */
+#challenge-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+#challenge-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2980b9; /* Blue color for the title */
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+#challenge-description {
+    font-size: 1.3rem;
+    color: #555; /* Softer gray for the description */
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #3498db; /* Blue background for buttons */
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* To-Do List Section */
+#todo-section {
+    margin-top: 50px;
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1.5s ease-out;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+#todo-list li {
+    background-color: #ecf0f1;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#todo-list li:hover {
+    background-color: #dfe6e9;
+    transform: translateY(-3px);
+}
+
+button.remove-btn {
+    background-color: #e74c3c; /* Red for remove button */
+    border-radius: 50%;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/* Challenge History Section */
+#history-list {
+    margin-top: 30px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#history-list li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Small Screen Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #category-select {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
