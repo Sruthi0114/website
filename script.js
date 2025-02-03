@@ -48,22 +48,7 @@ const challenges = {
         "Try paddleboarding or kayaking on a nearby lake.",
         "Plan a weekend getaway to an unfamiliar place."
     ],
-    Mindfulness: [
-        "Meditate for 10 minutes in a quiet place.",
-        "Write down 5 things you are grateful for today.",
-        "Take 5 minutes to close your eyes and focus on your breathing.",
-        "Do a digital detox for an hour—no phone, no screens.",
-        "Go for a nature walk and pay attention to the surroundings.",
-        "Try a mindfulness activity such as deep breathing or progressive muscle relaxation."
-    ],
-    Environment: [
-        "Pick up trash at a local park or beach.",
-        "Plant a tree or start a small garden.",
-        "Unplug all your devices for an hour to save energy.",
-        "Create a recycling bin system at home or in your office.",
-        "Switch off all unnecessary lights for the day and save energy.",
-        "Try eating a plant-based meal to reduce your carbon footprint."
-    ],
+   
     Hobbies: [
         "Learn how to juggle or improve your juggling skills.",
         "Try knitting or crocheting something simple.",
