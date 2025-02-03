@@ -141,7 +141,7 @@ button:focus {
 }
 
 #todo-list li:hover {
-    background-color: #dfe6e9;
+    background-color: blue;
     transform: translateY(-3px);
 }
 
