@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Challenge Generator</h1>
+
+        <!-- Category Selection -->
+        <div>
+            <label for="category-select">Select a Category:</label>
+            <select id="category-select">
+                <option value="Social">Social</option>
+                <option value="Creative">Creative</option>
+                <option value="Physical">Physical</option>
+                <option value="Intellectual">Intellectual</option>
+                <option value="Culinary">Culinary</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Mindfulness">Mindfulness</option>
+                <option value="Environment">Environment</option>
+                <option value="Hobbies">Hobbies</option>
+                <option value="Technology">Technology</option>
+            </select>
+        </div>
+
+        <!-- Challenge Display -->
+        <div id="challenge-section">
+            <h2 id="challenge-title">Choose a category to see a challenge</h2>
+            <p id="challenge-description">Once you select a category, a challenge will appear here.</p>
+            <button id="get-challenge-btn">Get Challenge</button>
+            <button id="add-to-todo-btn" style="display:none;">Add to To-Do List</button> <!-- Hidden initially -->
+        </div>
+
+        <!-- To-Do List Section -->
+        <div id="todo-section" style="display:none;">
+            <h3>Your To-Do List</h3>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <!-- Challenge History -->
+        <h3>Your Challenge History</h3>
+        <ul id="history-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
